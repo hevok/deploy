@@ -80,7 +80,7 @@ EOF
     sudo service postgresql restart
 }
 
-clone {
+clone() {
     git clone $REPO
 }
 
@@ -88,7 +88,7 @@ configure_settings(){
 
 }
 
-symlink(){
+symlink() {
     ln -s /usr/lib/pymodules/python2.7/django/contrib/admin/media /home/ubuntu/appointly/static/admin
 }
 
@@ -100,7 +100,7 @@ restart_server() {
     sudo /etc/init.d/apache2 restart
 }
 
-update_syste()
+update_system()
 install_git
 install_server()
 install_python()
