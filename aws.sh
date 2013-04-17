@@ -3,12 +3,15 @@
 
 export DEBIAN_FRONTEND=noninteractive
 
+export NAME="deploy"
+
+
 update_system() {
     sudo aptitude update
     sudo aptitude -y upgrade
 }
 
-install_git {
+install_git() {
     sudo aptitude install git
 }
 
